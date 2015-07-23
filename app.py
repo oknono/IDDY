@@ -6,11 +6,9 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    result = "Test"
     url = 'https://en.wikipedia.org/w/api.php?action=query&titles=Dick%20Cheney&continue=&prop=categories&format=json'
     r = requests.get(url)
     d = categories(r)
-    print is_dead(d)
     if is_dead(d):
         name = "dead"
         result = "Dick Cheney is Dead!"
