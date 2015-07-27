@@ -1,23 +1,37 @@
 * {
     font-family: Arial, Helvetica Neue,Helvetica,sans-serif;
-	font-size: 1.5em;
 }
 
 p {
 	text-align: center;
 }
 
-.small {
-	font-size: 1em;
-	font-size: italic;
+.main {
+    font-size: 3em;
+    width: 100%;
+    top: 100px;
 }
 
 .alive {
-	background-color: black;
-	color: white;
+	background-color: #666666;
+	color: #F4F0EC;
 }
 
 .dead {
-	background-color: white;
-	color: black;
+	background-color: #F4F0EC;
+	color: #666666;
 }
+
+.small {
+	font-size: 1em;
+	font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #009797;
+}
+
+a:hover {
+	color: #ff008b;
+};

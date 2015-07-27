@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Is Dick Dead Yet?</title>
+    <title>Is Dick Cheney Dead Yet?</title>
+    <meta name="description" content="Keep yourself informed whether of not Richard Bruce \"Dick\" Cheney, the 46th Vice Presindent of the United States of America is dead yet">
+    <meta name="keywords" content="Dick, Cheney, Dead">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='DC.ico') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body class={{ name }}>
-  	<p class="small">According to Wikipedia</p>
-    <p>{{ result }}</p>
+    <p class="main">{{ result }}</p>
+ <p class="small"> This page uses the <a href="https://www.mediawiki.org/wiki/API:Main_page">MediaWiki API</a> to check if Dick Cheney is still breathing</p>
   </body>
 </html>
 

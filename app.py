@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import requests
-from wiki_request import categories, is_dead
+from wiki_JSON import categories, is_dead
 
 app = Flask(__name__)
 
