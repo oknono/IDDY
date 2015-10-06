@@ -9,8 +9,9 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body class={{ name }}>
-    <p class="main">{{ result }}</p>
- <p class="small"> This page uses the <a href="https://www.mediawiki.org/wiki/API:Main_page">MediaWiki API</a> to check if Dick Cheney is still breathing</p>
+     <p class="main">{{ result }}</p>
+     <p><button onClick="history.go(0)" type="button">Let me check again</button></p>
+     <p class="small"> This page uses the <a href="https://www.mediawiki.org/wiki/API:Main_page">MediaWiki API</a> to check if Dick Cheney is still breathing</p>
   </body>
 </html>
 

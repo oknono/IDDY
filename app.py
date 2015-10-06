@@ -15,7 +15,7 @@ def index():
     else:
         name = "alive"
         result = "Dick Cheney is not dead yet..."
-    return render_template('index.html', name=name, result=result)
+    return render_template('index.html', name=name, result=result, text=name)
 
 if __name__ == '__main__':
     app.run()
