@@ -10,7 +10,11 @@
   </head>
   <body class={{ name }}>
      <p class="main">{{ result }}</p>
-     <p><button onClick="history.go(0)" type="button">Let me check again</button></p>
+     <div class="button">
+       <form action="/">
+          <input type="submit" value="Let me check again">
+       </form>
+    </div>
      <p class="small"> This page uses the <a href="https://www.mediawiki.org/wiki/API:Main_page">MediaWiki API</a> to check if Dick Cheney is still breathing</p>
   </body>
 </html>

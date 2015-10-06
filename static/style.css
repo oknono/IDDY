@@ -6,6 +6,10 @@ p {
 	text-align: center;
 }
 
+.button {
+    text-align: center;
+}
+
 .main {
     font-size: 3em;
     width: 100%;
@@ -29,9 +33,9 @@ p {
 
 a {
     text-decoration: none;
-    color: #009797;
+    color: #FF007F;
 }
 
 a:hover {
-	color: #ff008b;
+	color: #ff5900;
 };
