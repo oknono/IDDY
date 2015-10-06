@@ -1,1 +1,1 @@
-This is a flask webframe that uses a script to check whether or not Dick Cheney is still alive. To determine this a call is make with the WikiMedia api
+This is a very small flask webapplication that uses a script to check whether or not Dick Cheney is still alive. To determine this a call is make with the WikiMedia api. The app is online at http://www.isdickdeadyet.xyz
