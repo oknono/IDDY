@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 import requests
 from wiki_JSON import categories, is_dead
 import random
@@ -25,6 +25,10 @@ def index():
         name = "alive"
         result = alive_text[random.randrange(len(alive_text))]
     return render_template('index.html', name=name, result=result )
+
+@app.route('/api', methods=['GET'])
+def get_tasks():
+    return jsonify({'dick is dead': is_dead})
 
 if __name__ == '__main__':
     app.run()
