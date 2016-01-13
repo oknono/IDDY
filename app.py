@@ -26,5 +26,11 @@ def index():
         result = alive_text[random.randrange(len(alive_text))]
     return render_template('index.html', name=name, result=result )
 
+@app.route('/api', methods=['GET'])
+def get_dick():
+    dick = Wiki_Person("Dick Cheney")
+    dick_dead = dick.is_dead()
+    return jsonify({'dick_is_dead': dick_dead})
+
 if __name__ == '__main__':
     app.run()
